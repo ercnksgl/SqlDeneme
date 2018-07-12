@@ -36,7 +36,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/image_profile_item"
         app:layout_constraintTop_toBottomOf="@+id/user_item_surname_text" />
 
     <TextView
@@ -51,7 +51,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/image_profile_item"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -66,11 +66,11 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/image_profile_item"
         app:layout_constraintTop_toBottomOf="@+id/user_item_name_text" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/image_profile_item"
         android:layout_width="85dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
