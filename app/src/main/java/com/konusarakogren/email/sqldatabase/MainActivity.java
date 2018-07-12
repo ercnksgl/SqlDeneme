@@ -46,9 +46,7 @@ public class MainActivity extends AppCompatActivity implements ProfilePhotoInter
                 finish();
             }
         });
-        name.add("Ercan");
-        surname.add("Köseoğlu");
-        like_count.add("35");
+
 
         name.add("Deneme");
         surname.add("Test");
@@ -58,17 +56,13 @@ public class MainActivity extends AppCompatActivity implements ProfilePhotoInter
         surname.add("AltDeneme");
         like_count.add("15");
 
-        name.add("Olanları Unutup");
-        surname.add("Geriye Dönemem");
-        like_count.add("60");
+        name.add("Deneme");
+        surname.add("Test");
+        like_count.add("25");
 
-        name.add("Yandım Çok");
-        surname.add("Öylece Sevemem");
-        like_count.add("35");
-
-        name.add("Ercan");
-        surname.add("Köseoğlu");
-        like_count.add("35");
+        name.add("Test");
+        surname.add("AltDeneme");
+        like_count.add("15");
 
         name.add("Deneme");
         surname.add("Test");
@@ -78,10 +72,6 @@ public class MainActivity extends AppCompatActivity implements ProfilePhotoInter
         surname.add("AltDeneme");
         like_count.add("15");
 
-        name.add("Ercan");
-        surname.add("Köseoğlu");
-        like_count.add("35");
-
         name.add("Deneme");
         surname.add("Test");
         like_count.add("25");
@@ -89,29 +79,6 @@ public class MainActivity extends AppCompatActivity implements ProfilePhotoInter
         name.add("Test");
         surname.add("AltDeneme");
         like_count.add("15");
-        name.add("Ercan");
-        surname.add("Köseoğlu");
-        like_count.add("35");
-
-        name.add("Deneme");
-        surname.add("Test");
-        like_count.add("25");
-
-        name.add("Test");
-        surname.add("AltDeneme");
-        like_count.add("15");
-
-        name.add("Olanları Unutup");
-        surname.add("Geriye Dönemem");
-        like_count.add("60");
-
-        name.add("Yandım Çok");
-        surname.add("Öylece Sevemem");
-        like_count.add("35");
-
-        name.add("Ercan");
-        surname.add("Köseoğlu");
-        like_count.add("35");
 
         name.add("Deneme");
         surname.add("Test");
@@ -121,9 +88,21 @@ public class MainActivity extends AppCompatActivity implements ProfilePhotoInter
         surname.add("AltDeneme");
         like_count.add("15");
 
-        name.add("Ercan");
-        surname.add("Köseoğlu");
-        like_count.add("35");
+        name.add("Deneme");
+        surname.add("Test");
+        like_count.add("25");
+
+        name.add("Test");
+        surname.add("AltDeneme");
+        like_count.add("15");
+
+        name.add("Deneme");
+        surname.add("Test");
+        like_count.add("25");
+
+        name.add("Test");
+        surname.add("AltDeneme");
+        like_count.add("15");
 
         name.add("Deneme");
         surname.add("Test");

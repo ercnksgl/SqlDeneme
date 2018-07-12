@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
+import java.util.Random;
 
 public class List_Adapter extends RecyclerView.Adapter<List_Adapter.ViewHolder> {
 
@@ -49,6 +50,14 @@ public class List_Adapter extends RecyclerView.Adapter<List_Adapter.ViewHolder> 
         holder.like_count_txt.setText("Like: " + like_count.get(position));
         holder.name_txt.setText(name.get(position));
         holder.surname_txt.setText(surname.get(position));
+        Random random = new Random();
+        int i = random.nextInt(2) + 1;
+        if (i == 1) {
+            holder.friend_profil_pic.setImageResource(R.drawable.ic_user_women);
+        } else {
+            holder.friend_profil_pic.setImageResource(R.drawable.ic_man);
+        }
+
         holder.friend_profil_pic.setClickable(true);
         holder.friend_profil_pic.setOnClickListener(new View.OnClickListener() {
 
