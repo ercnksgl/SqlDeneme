@@ -1,5 +1,6 @@
 package com.konusarakogren.email.sqldatabase;
 
+import android.animation.ValueAnimator;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,23 +16,24 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 import java.sql.SQLData;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ProfilePhotoInterface {
     SQLConnection sqlConnection;
-
+    private LottieAnimationView animationView;
     private int age = 0;
     private boolean isMarried;
     ImageView profil_photo_main;
-
     List<String> name = new ArrayList<>();
     List<String> surname = new ArrayList<>();
     List<String> like_count = new ArrayList<>();
     RecyclerView recyclerView;
     List_Adapter recyclerAdapter;
-
+    ValueAnimator animator;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,25 @@ public class MainActivity extends AppCompatActivity implements ProfilePhotoInter
                 finish();
             }
         });
+        animationView=findViewById(R.id.walking_animation);
+
+         animator = ValueAnimator.ofFloat(0f, 1f).setDuration(2000);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                animationView.setProgress((Float) valueAnimator.getAnimatedValue());
+            }
+        });
+
+        animationView.setClickable(true);
+        animationView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                animator.start();
+
+            }
+        });
+
 
 
         name.add("Deneme");
